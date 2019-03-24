@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Guessing Game</title>
 </head>
 <body>
+    
+    <h1>The Psychic Game</h1>
+    <p>Guess what letter I'm thinking of</p>
+
+    <div>
+        <p id="userChoice-text">Press a letter to begin</p>
+        <p id="wins-text">Wins</p>
+        <p id="losses-text">Losses</p>
+        <p id="guessesLeft-text">Guesses Left</p>
+        <p id="letterGuessed-text">Letters Guessed</p>
+
+
+    </div>
+
+    <script type="text/javascript">
+    //Create an Array that lists out all options (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z)
+    var computerChoices = ["a", "b", "c", "d", "e", "f","g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", ]
+
+    //This function is run when the user presses a kay.
+    document.onupkey = function(event) {}
+
+    var lettersGuessed = [];
+    var guessesLeft = 9;
+
+    //Create variables that hold hold number of wins,losses, and ties. They start at 0.
+    var ties = 0;
+    var losses = 0;
+    var wins = 0;
+
+    
+    </script>
+
     
 </body>
 </html>
