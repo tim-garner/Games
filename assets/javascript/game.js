@@ -7,7 +7,8 @@ var losses = 0;
 var wins = 0;
 // Create variables for letters guessed and how many guesses they have left.
 var lettersGuessed = [];
-var guessesLeft = 9;
+var guessesLeft = 9; 
+
 
 
 // Creates variable on webpage for wins,losses, ties to display on screen.
@@ -44,12 +45,14 @@ document.onkeyup = function (event) {
     if (userGuess === computerChoice) {
       wins++;
       resetGame()
+      alert("You Win!!!!!")
     } else {
       guessesLeft--;
     }
     if (guessesLeft === 0) {
       losses++;
       resetGame()
+      alert("You Lose!!!")
     }
   }
 
@@ -65,5 +68,5 @@ document.onkeyup = function (event) {
   lossesText.textContent = "losses: " + losses;
   userGuessText.textContent = "You Chose " + userGuess;
   letterGuessedtext.textContent = "You picked " + lettersGuessed;
-
+  guessesLeftText.textContent = "Guesses Left " + guessesLeft;
 };
